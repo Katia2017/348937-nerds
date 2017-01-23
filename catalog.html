@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Магазин шаблонов</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="header-container">
+        <div class="header-logo">
+          <img src="img/header-logo.png" width="120" height="40" alt="Нёрдс">
+        </div>
+        <nav class="main-navigation">
+          <ul>
+            <li>
+              <a href="#">Студия</a>
+            </li>
+            <li>
+              <a href="#">Клиенты</a>
+            </li>
+            <li>
+              <a href="#">Магазин</a>
+            </li>
+            <li>
+              <a href="#">Контакты</a>
+            </li>
+            <li>
+              <a href="#">Корзина</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="title">
+        <h1>Магазин готовых шаблонов</h1>
+      </div>
+    </header>
+
+    <div class="sidebar">
+      <div class="price">
+            <span class="price-title">Стоимость: </span><br>
+            <div class="price-limit"></div>
+          <br><br>
+        <form action="#" method="post">
+          <label>
+            От <input type="text" name="min-price" id="min-price-field">
+          </label>
+          <label>
+            До <input type="text" name="max-price" id="max-price-field">
+          </label>
+        </form>
+      </div><br>
+
+      <div class="net">
+        <form action="#" method="post">
+          <span class="net-title">Сетка:</span><br>
+          <label>
+            <input type="radio" name="net-radio" value="adaptive" checked> Адаптивная
+          </label><br>
+          <label>
+            <input type="radio" name="net-radio" value="fixed"> Фиксированная
+          </label><br>
+          <label>
+            <input type="radio" name="net-radio" value="rubber"> Резиновая
+          </label><br>
+        </form>
+      </div><br>
+
+      <div class="features">
+        <form action="#" method="post">
+          <span class="features-title">Особенности:</span>
+          <br>
+          <label>
+            <input type="checkbox" name="features-chekbox" value="slider" checked> Слайдер
+          </label><br>
+          <label>
+            <input type="checkbox" name="features-chekbox" value="advantages"> Блок преимуществ
+          </label><br>
+          <label>
+            <input type="checkbox" name="features-chekbox" value="news" checked> Новости
+          </label><br>
+          <label>
+            <input type="checkbox" name="features-chekbox" value="gallery"> Галерея
+          </label><br>
+          <label>
+            <input type="checkbox" name="features-chekbox" value="basket"> Корзина
+          </label><br><br>
+        </form>
+      </div>
+
+      <div class="btn-show">
+        <form action="#" method="post">
+          <input type="submit" value="Показать">
+        </form>
+      </div>
+    </div>
+
+    <section class="catalog">
+      <nav class="catalog-nav">
+        <span class="catalog-title">Сортировать:</span>
+        <form action="#" method="post">
+          <input type="submit" name="btn-price" value="по цене">
+          <input type="submit" name="btn-type" value="по типу">
+          <input type="submit" name="btn-name" value="по названию">
+          <input type="submit" name="down">
+          <input type="submit" name="up">
+        </form>
+      </nav>
+
+      <div class="catalog-content">
+
+      </div>
+
+      <div class="catalog-links">
+
+      </div>
+
+    </section>
+
+    <section class="map">
+      <div class="address">
+        <h3>Nёrds design studio</h3>
+        <p>191116, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+        <p>тел. +7(812)275-75-75</p>
+        <a class="btn-write pink" href="#">Напишите нам</a>
+      </div>
+    </section>
+
+    <footer class="main-footer">
+      <div class="footer-social">
+        <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+        <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+        <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+      </div>
+      <span class="footer-text>">Давайте дружить, это выгодно!</span>
+      <p>Скидка 10% для друзей из социальных сетей.</p>
+    </footer>
+
+  </body>
+</html>
