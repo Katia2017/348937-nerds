@@ -24,11 +24,11 @@
             <li>
               <a href="#">Контакты</a>
             </li>
-            <li>
-              <a href="#">Корзина</a>
-            </li>
           </ul>
         </nav>
+        <div class="basket">
+          <a href="#">Корзина</a>
+        </div>
       </div>
       <div class="title">
         <h1>Магазин готовых шаблонов</h1>
@@ -36,82 +36,93 @@
     </header>
 
     <div class="sidebar">
-      <div class="price">
-            <span class="price-title">Стоимость: </span><br>
+      <form action="#" method="post">
+
+        <div class="price">
+            <span class="price-title">Стоимость: </span>
             <div class="price-limit"></div>
-          <br><br>
-        <form action="#" method="post">
           <label>
             От <input type="text" name="min-price" id="min-price-field">
           </label>
           <label>
             До <input type="text" name="max-price" id="max-price-field">
           </label>
-        </form>
-      </div><br>
+        </div>
 
-      <div class="net">
-        <form action="#" method="post">
-          <span class="net-title">Сетка:</span><br>
+        <div class="net">
+          <span class="net-title">Сетка:</span>
           <label>
             <input type="radio" name="net-radio" value="adaptive" checked> Адаптивная
-          </label><br>
+          </label>
           <label>
             <input type="radio" name="net-radio" value="fixed"> Фиксированная
-          </label><br>
+          </label>
           <label>
             <input type="radio" name="net-radio" value="rubber"> Резиновая
-          </label><br>
-        </form>
-      </div><br>
+          </label>
+        </div>
 
-      <div class="features">
-        <form action="#" method="post">
+        <div class="features">
           <span class="features-title">Особенности:</span>
-          <br>
           <label>
-            <input type="checkbox" name="features-chekbox" value="slider" checked> Слайдер
-          </label><br>
+            <input type="checkbox" name="slider-chekbox" value="slider" checked> Слайдер
+          </label>
           <label>
-            <input type="checkbox" name="features-chekbox" value="advantages"> Блок преимуществ
-          </label><br>
+            <input type="checkbox" name="advantages-chekbox" value="advantages"> Блок преимуществ
+          </label>
           <label>
-            <input type="checkbox" name="features-chekbox" value="news" checked> Новости
-          </label><br>
+            <input type="checkbox" name="news-chekbox" value="news" checked> Новости
+          </label>
           <label>
-            <input type="checkbox" name="features-chekbox" value="gallery"> Галерея
-          </label><br>
+            <input type="checkbox" name="gallery-chekbox" value="gallery"> Галерея
+          </label>
           <label>
-            <input type="checkbox" name="features-chekbox" value="basket"> Корзина
-          </label><br><br>
-        </form>
-      </div>
+            <input type="checkbox" name="basket-chekbox" value="basket"> Корзина
+          </label>
+        </div>
 
-      <div class="btn-show">
-        <form action="#" method="post">
+        <div class="btn-show">
           <input type="submit" value="Показать">
-        </form>
-      </div>
+        </div>
+      </form>
     </div>
 
     <section class="catalog">
-      <nav class="catalog-nav">
+      <div class="catalog-nav">
         <span class="catalog-title">Сортировать:</span>
-        <form action="#" method="post">
-          <input type="submit" name="btn-price" value="по цене">
-          <input type="submit" name="btn-type" value="по типу">
-          <input type="submit" name="btn-name" value="по названию">
-          <input type="submit" name="down">
-          <input type="submit" name="up">
-        </form>
-      </nav>
+          <a class="btn-price" href="#">По цене</a>
+          <a class="btn-type" href="#">По типу</a>
+          <a class="btn-name" href="#">По названию</a>
+          <a class="btn-down" href="#">Вниз</a>
+          <a class="btn-up" href="#">Вверх</a>
+      </div>
 
       <div class="catalog-content">
-
+        <a href="#">
+          <img src="#" alt="Sedona">
+        </a>
+        <a href="#">
+          <img src="#" alt="Pink">
+        </a>
+        <a href="#">
+          <img src="#" alt="Barbershop">
+        </a>
+        <a href="#">
+          <img src="#" alt="Милые штуки">
+        </a>
+        <a href="#">
+          <img src="#" alt="Учеба">
+        </a>
+        <a href="#">
+          <img src="#" alt="Крафтовый квас">
+        </a>
       </div>
 
       <div class="catalog-links">
-
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">Следующая</a>
       </div>
 
     </section>
