@@ -3,12 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>Nerds</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="main-header">
-      <div class="header-container">
+    <header>
+      <div class="container">
         <div class="header-logo">
-          <img src="img/header-logo.png" width="120" height="40" alt="Нёрдс">
+          <img src="img/nerds-logo.png" width="160" height="65" alt="Нёрдс">
         </div>
         <nav class="main-navigation">
           <ul>
@@ -29,30 +30,32 @@
         <div class="basket">
           <a href="#">Корзина</a>
         </div>
-      </div>
-      <div class="features">
-        <span class="features-description">Долго, дорого, скрупулезно.</span>
-        <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-        <a class="btn" href="#">Узнать больше</a>
+        <div class="features">
+          <span class="big-text">Долго, дорого, скрупулезно.</span>
+          <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+          <a class="btn" href="#">Узнать больше</a>
+        </div>
+        <img src="img/slide1.png" width="698" height="413" alt="Слайд 1">
       </div>
     </header>
 
-    <main class="container">
-      <section class="menu">
+    <main>
+      <div class="container">
+        <section class="menu">
         <div class="menu-item">
-          <img src="img/photo-1.jpg" width="200" height="100" alt="Веб-сайты">
+          <img src="img/illustration-1.png" width="300" height="146" alt="Веб-сайты">
           <h2>Веб-сайты</h2>
           <p>Мир никогда не будет прежним после того, как увидит ваш сайт!</p>
           <a class="btn-menu pink" href="#">Заказать</a>
         </div>
         <div class="menu-item">
-          <img src="img/photo-2.jpg" width="200" height="100" alt="Приложения">
+          <img src="img/illustration-2.png" width="300" height="146" alt="Приложения">
           <h2>Приложения</h2>
           <p>Покорите топ-10 приложений в AppStore и GooglePlay.</p>
           <a class="btn-menu green" href="#">Заказать</a>
         </div>
         <div class="menu-item">
-          <img src="img/photo-3.jpg" width="200" height="100" alt="Презентации">
+          <img src="img/illustration-3.png" width="300" height="146" alt="Презентации">
           <h2>Презентации</h2>
           <p>Вы даже не подозреваете, насколько Вы изумительны!</p>
           <a class="btn-menu orange" href="#">Заказать</a>
@@ -72,7 +75,7 @@
         </div>
         <div class="about-right">
           <div class="index-logo">
-            <img src="img/index-logo.png" width="120" height="40" alt="Нёрдс">
+            <img src="img/nerds-illustration.jpg" width="360" height="208" alt="Нёрдс">
           </div>
           <h3>С 2004 года любим точность во всем:</h3>
           <div class="percent">
@@ -92,37 +95,44 @@
 
       <section class="partners">
         <div class="partner">
-          <a href="#">Html Academy</a>
+          <a href="#"><img src="img/logo-1.png" width="199" height="68" alt="html academy"></a>
         </div>
         <div class="partner">
-          <a href="#">Barbershop Borodinski</a>
+          <a href="#"><img src="img/logo-2.png" width="209" height="90" alt="Borodinski"></a>
         </div>
         <div class="partner">
-          <a href="#">Pink</a>
+          <a href="#"><img src="img/logo-3.png" width="185" height="52" alt="Pink"></a>
         </div>
         <div class="partner">
-          <a href="#">Mishka</a>
+          <a href="#"><img src="img/logo-4.png" width="173" height="84" alt="Mishka"></a>
         </div>
       </section>
+    </div>
 
       <section class="map">
-        <div class="address">
-          <h3>Nёrds design studio</h3>
-          <p>191116, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-          <p>тел. +7(812)275-75-75</p>
-          <a class="btn-write pink" href="#">Напишите нам</a>
+        <img src="img/layer2.jpg" width="1440" height="416" alt="Карта">
+        <img src="img/map-marker.png" width="231" height="190" alt="маркер">
+        <div class="container">
+          <div class="address">
+            <h3>Nёrds design studio</h3>
+            <p>191116, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+            <p>тел. +7(812)275-75-75</p>
+            <a class="btn-write pink" href="#">Напишите нам</a>
+          </div>
         </div>
       </section>
     </main>
-    
-      <footer class="main-footer">
-        <div class="footer-social">
-          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-          <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+
+      <footer>
+        <div class="container">
+          <div class="footer-social">
+            <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+            <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+            <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+          </div>
+          <span class="footer-text>">Давайте дружить, это выгодно!</span>
+          <p>Скидка 10% для друзей из социальных сетей.</p>
         </div>
-        <span class="footer-text>">Давайте дружить, это выгодно!</span>
-        <p>Скидка 10% для друзей из социальных сетей.</p>
       </footer>
   </body>
 </html>
