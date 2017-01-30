@@ -6,13 +6,15 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header>
+    <header class="catalog-header">
       <div class="container">
-        <div class="header-logo">
-          <img src="img/nerds-logo.png" width="160" height="65" alt="Нёрдс">
-        </div>
         <nav class="main-navigation">
-          <ul>
+          <div class="header-logo">
+            <a href="#">
+              <img src="img/nerds-logo.png" width="160" height="65" alt="Нёрдс">
+            </a>
+          </div>
+          <ul class="header-ul">
             <li>
               <a href="#">Студия</a>
             </li>
@@ -26,113 +28,138 @@
               <a href="#">Контакты</a>
             </li>
           </ul>
+          <div class="basket">
+            <a href="#">Корзина</a>
+          </div>
         </nav>
-        <div class="basket">
-          <a href="#">Корзина</a>
-        </div>
+
         <div class="title">
-          <span class="big-text">Магазин готовых шаблонов</span>
+          <h1 class="big-text">Магазин готовых шаблонов</h1>
         </div>
       </div>
     </header>
 
     <div class="container">
-      <div class="sidebar">
-        <form action="#" method="post">
+      <main class="catalog-main">
+        <div class="sidebar">
+          <form action="#" method="get">
 
-          <div class="price">
-            <span class="price-title">Стоимость: </span>
-            <div class="price-limit"></div>
-            <label>
-              От <input type="text" name="min-price" id="min-price-field">
-            </label>
-            <label>
-              До <input type="text" name="max-price" id="max-price-field">
-            </label>
+            <div class="price">
+              <span class="price-title">Стоимость: </span>
+              <div class="price-limit"></div>
+              <label>
+                От <input type="text" name="min-price" id="min-price-field">
+              </label>
+              <label>
+                До <input type="text" name="max-price" id="max-price-field">
+              </label>
+            </div>
+
+            <div class="net">
+              <span class="net-title">Сетка:</span>
+              <ul>
+                <li>
+                  <label>
+                    <input type="radio" name="net-radio" value="adaptive" checked> Адаптивная
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input type="radio" name="net-radio" value="fixed"> Фиксированная
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input type="radio" name="net-radio" value="rubber"> Резиновая
+                  </label>
+                </li>
+              </ul>
+            </div>
+
+            <div class="features">
+              <span class="features-title">Особенности:</span>
+              <ul>
+                <li>
+                  <label>
+                    <input type="checkbox" name="slider-chekbox" value="slider" checked> Слайдер
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input type="checkbox" name="advantages-chekbox" value="advantages"> Блок преимуществ
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input type="checkbox" name="news-chekbox" value="news" checked> Новости
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input type="checkbox" name="gallery-chekbox" value="gallery"> Галерея
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input type="checkbox" name="basket-chekbox" value="basket"> Корзина
+                  </label>
+                </li>
+              </ul>
+            </div>
+
+            <div class="btn-show">
+              <a href="">Показать</a>
+            </div>
+          </form>
+        </div>
+
+        <section class="catalog">
+          <div class="catalog-nav">
+            <span class="catalog-title">Сортировать:</span>
+            <a class="btn-price" href="#">По цене</a>
+            <a class="btn-type" href="#">По типу</a>
+            <a class="btn-name" href="#">По названию</a>
+            <a class="btn-down" href="#">Вниз</a>
+            <a class="btn-up" href="#">Вверх</a>
           </div>
 
-          <div class="net">
-            <span class="net-title">Сетка:</span>
-            <label>
-              <input type="radio" name="net-radio" value="adaptive" checked> Адаптивная
-            </label>
-            <label>
-              <input type="radio" name="net-radio" value="fixed"> Фиксированная
-            </label>
-            <label>
-              <input type="radio" name="net-radio" value="rubber"> Резиновая
-            </label>
+          <div class="catalog-content">
+            <a href="#">
+              <img src="img/img-sedona.jpg" width="360" heigt="576" alt="Sedona">
+            </a>
+            <a href="#">
+              <img src="img/img-pink.jpg" width="360" heigt="576" alt="Pink">
+            </a>
+            <a href="#">
+              <img src="img/img-barbershop.jpg" width="360" heigt="576" alt="Barbershop">
+            </a>
+            <a href="#">
+              <img src="img/img-mishka.jpg" width="360" heigt="576" alt="Милые штуки">
+            </a>
+            <a href="#">
+              <img src="img/img-aplus.jpg" width="360" heigt="576" alt="Учеба">
+            </a>
+            <a href="#">
+              <img src="img/img-kvast.jpg" width="360" heigt="576" alt="Крафтовый квас">
+            </a>
           </div>
 
-          <div class="features">
-            <span class="features-title">Особенности:</span>
-            <label>
-              <input type="checkbox" name="slider-chekbox" value="slider" checked> Слайдер
-            </label>
-            <label>
-              <input type="checkbox" name="advantages-chekbox" value="advantages"> Блок преимуществ
-            </label>
-            <label>
-              <input type="checkbox" name="news-chekbox" value="news" checked> Новости
-            </label>
-            <label>
-              <input type="checkbox" name="gallery-chekbox" value="gallery"> Галерея
-            </label>
-            <label>
-              <input type="checkbox" name="basket-chekbox" value="basket"> Корзина
-            </label>
+          <div class="catalog-links">
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">Следующая</a>
           </div>
 
-          <div class="btn-show">
-            <input type="submit" value="Показать">
-          </div>
-        </form>
+        </section>
       </div>
-
-      <section class="catalog">
-        <div class="catalog-nav">
-          <span class="catalog-title">Сортировать:</span>
-          <a class="btn-price" href="#">По цене</a>
-          <a class="btn-type" href="#">По типу</a>
-          <a class="btn-name" href="#">По названию</a>
-          <a class="btn-down" href="#">Вниз</a>
-          <a class="btn-up" href="#">Вверх</a>
-        </div>
-
-        <div class="catalog-content">
-          <a href="#">
-            <img src="img/img-sedona.jpg" width="360" heigt="576" alt="Sedona">
-          </a>
-          <a href="#">
-            <img src="img/img-pink.jpg" width="360" heigt="576" alt="Pink">
-          </a>
-          <a href="#">
-            <img src="img/img-barbershop.jpg" width="360" heigt="576" alt="Barbershop">
-          </a>
-          <a href="#">
-            <img src="img/img-mishka.jpg" width="360" heigt="576" alt="Милые штуки">
-          </a>
-          <a href="#">
-            <img src="img/img-aplus.jpg" width="360" heigt="576" alt="Учеба">
-          </a>
-          <a href="#">
-            <img src="img/img-kvast.jpg" width="360" heigt="576" alt="Крафтовый квас">
-          </a>
-        </div>
-
-        <div class="catalog-links">
-          <a href="#">1</a>
-          <a href="#">2</a>
-          <a href="#">3</a>
-          <a href="#">Следующая</a>
-        </div>
-
-      </section>
-    </div>
+    </main>
 
     <section class="map">
       <img src="img/layer2.jpg" width="1440" height="416" alt="Карта">
-      <img src="img/map-marker.png" width="231" height="190" alt="маркер">
+      <div class="map-marker">
+        <img src="img/map-marker.png" width="231" height="190" alt="маркер">
+      </div>
       <div class="container">
         <div class="address">
           <h3>Nёrds design studio</h3>
@@ -150,8 +177,10 @@
           <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
           <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
         </div>
-        <span class="footer-text>">Давайте дружить, это выгодно!</span>
-        <p>Скидка 10% для друзей из социальных сетей.</p>
+        <div class="footer-text">
+          <p><span class="footer-span">Давайте дружить, это выгодно!</span></p>
+          <p>Скидка 10% для друзей из социальных сетей.</p>
+        </div>
       </div>
     </footer>
 

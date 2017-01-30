@@ -6,6 +6,125 @@ body {
   font-family: Roboto;
 }
 
+.container{
+  width: 1160px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.index-header{
+  background-color: #eeeeee;
+  height: 545px;
+}
+
+.main-navigation{
+  width: 1160px;
+  height: 120px;
+}
+
+.header-logo{
+  float: left;
+}
+
+.header-ul{
+  float:left;
+}
+
+.main-navigation li{
+  display: inline-block;
+}
+
+.basket{
+  float: right;
+}
+
+.features{
+  width: 1160px;
+  height: 425px;
+}
+
+.features-text{
+  float: left;
+  width: 380px;
+}
+
+.features-img{
+  float: right;
+  margin-top: 12px;
+}
+
+.menu{
+  width: 1160px;
+  height: 510px;
+}
+
+.menu-item{
+  float: left;
+  width: 350px;
+  height: 300px;
+  margin-top: 80px;
+}
+
+.about{
+  width: 1161px;
+  height: 528px;
+}
+
+.about-left{
+  float: left;
+  width: 680px;
+  height: 440px;
+}
+
+.about-right{
+  float: left;
+  width: 400px;
+  height: 440px;
+}
+
+.percent{
+  display: inline-block;
+}
+
+.percent-content{
+  display: inline-block;
+  width: 100px;
+}
+
+.partners{
+  width: 1160px;
+  height: 180px;
+}
+
+.partner{
+  width: 250px;
+  height: 120px;
+  float: left;
+}
+
+.map{
+  height: 500px;
+  margin-top: 83px;
+}
+
+.map-marker{
+  display: none;
+}
+
+.address{
+  display: none;
+}
+
+.footer-social{
+  width: 300px;
+  float: left;
+}
+
+.footer-text{
+  width: 580px;
+  float: left;
+}
+
 .big-text {
   font-size: 55px;
   line-height: 55px;
@@ -20,4 +139,29 @@ h2{
   color: #000000;
   font-weight: bold;
   font-family: Roboto;
+}
+
+.catalog-header{
+  background-color: #eeeeee;
+  height: 320px;
+}
+
+.title{
+  width: 740px;
+  margin: 0 auto;
+  padding: 0 auto;
+}
+
+.catalog-main{
+  width: 2260px;
+}
+
+.sidebar{
+  width: 305px;
+  float: left;
+}
+
+.catalog{
+  width: 860px;
+  float: left;
 }
