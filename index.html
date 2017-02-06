@@ -8,32 +8,34 @@
   <body>
     <header class="index-header">
       <div class="container">
-        <nav class="main-navigation">
+        <div class="main-navigation">
           <div class="header-logo">
             <a>
-              <img src="img/nerds-logo.png" width="160" height="65" alt="Нёрдс">
+              <img class="header-logo-pic" src="img/nerds-logo.png" width="160" height="65" alt="Нёрдс">
             </a>
           </div>
-          <ul class="header-ul">
-            <li>
-              <a href="#">Студия</a>
-            </li>
-            <li>
-              <a href="#">Клиенты</a>
-            </li>
-            <li>
-              <a href="#">Магазин</a>
-            </li>
-            <li>
-              <a href="#">Контакты</a>
-            </li>
-          </ul>
+          <nav>
+            <ul class="header-ul">
+              <li>
+                <a href="#">Студия</a>
+              </li>
+              <li>
+                <a href="#">Клиенты</a>
+              </li>
+              <li>
+                <a href="#">Магазин</a>
+              </li>
+              <li>
+                <a href="#">Контакты</a>
+              </li>
+            </ul>
+          </nav>
           <div class="basket">
             <a href="#">Корзина</a>
           </div>
-        </nav>
+        </div>
 
-        <div class="features">
+        <div class="features1">
           <div class="features-text">
             <p><span class="big-text">Долго, дорого, скрупулезно.</span></p>
             <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
@@ -43,6 +45,29 @@
             <img src="img/slide1.png" width="698" height="413" alt="Слайд 1">
           </div>
         </div>
+
+        <div class="features2">
+          <div class="features-text">
+            <p><span class="big-text">Любим математику как никто другой</span></p>
+            <p>Никакого креатива, только математические формулы для рачета идеальный пропорций.</p>
+            <a class="btn" href="#">Узнать больше</a>
+          </div>
+          <div class="features-img">
+            <img src="img/slide2.png" width="663" height="430" alt="Слайд 2">
+          </div>
+        </div>
+
+        <div class="features3">
+          <div class="features-text">
+            <p><span class="big-text">Только ночь, только хардкор</span></p>
+            <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+            <a class="btn" href="#">Узнать больше</a>
+          </div>
+          <div class="features-img">
+            <img src="img/slide3.png" width="759" height="411" alt="Слайд 3">
+          </div>
+        </div>
+
       </div>
     </header>
 
@@ -86,15 +111,15 @@
           </div>
           <h3>С 2004 года любим точность во всем:</h3>
           <div class="percent">
-            <p class="percents">146%</p>
+            <p class="percents">146<span class="sign-percent">%</span></p>
             <p class="percent-content">Уровень самоотдачи</p>
           </div>
           <div class="percent">
-            <p class="percents">100%</p>
+            <p class="percents">100<span class="sign-percent">%</span></p>
             <p class="percent-content">Соблюдение сроков</p>
           </div>
           <div class="percent">
-            <p class="percents">50%</p>
+            <p class="percents">50<span class="sign-percent">%</span></p>
             <p class="percent-content">Минимальная предоплата</p>
           </div>
         </div>
@@ -145,5 +170,29 @@
           </div>
         </div>
       </footer>
+
+      <div class="write-us">
+        <h1>Напишите нам</h1>
+        <form action="#" method="post">
+          <div class="write-name">
+            <label>Ваше имя:
+              <input type="text" name="user-name" id="user-name-field" value="Представьтесь, пожалуйста">
+            </label>
+          </div>
+          <div class="write-email">
+            <label>Ваш e-mail:
+              <input type="text" name="user-mail" id="user-mail-field" value="Для отправки ответа">
+            </label>
+          </div>
+          <div class="write-text">
+            <label>Текст письма:
+              <textarea name="user-text" id="user-text-field" rows="4">В свободной форме</textarea>
+            </label>
+          </div>
+          <div class="write-btn">
+            <button type="submit">Отправить</button>
+          </div>
+        </form>
+      </div>
   </body>
 </html>
