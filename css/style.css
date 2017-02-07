@@ -23,11 +23,6 @@ body {
   clear: both;
 }
 
-.main-navigation{
-  width: 1160px;
-  min-height: 120px;
-}
-
 .header-logo{
   float: left;
 }
@@ -53,11 +48,6 @@ body {
   content: "";
   display: table;
   clear: both;
-}
-
-.features1{
-  width: 1160px;
-  min-height: 425px;
 }
 
 .features2::after{
@@ -100,11 +90,6 @@ body {
   clear: both;
 }
 
-.menu{
-  width: 1160px;
-  min-height: 510px;
-}
-
 .menu-item:nth-child(3n){
   margin-right: 0;
 }
@@ -121,11 +106,6 @@ body {
   content: "";
   display: table;
   clear: both;
-}
-
-.about{
-  width: 1161px;
-  min-height: 528px;
 }
 
 .about-left{
@@ -155,11 +135,6 @@ body {
   clear: both;
 }
 
-.partners{
-  width: 1160px;
-  min-height: 180px;
-}
-
 .partner:nth-child(4n){
   margin-right: 0;
 }
@@ -182,10 +157,19 @@ body {
 }
 
 .address{
-  display: none;
+  display: block;
+  width: 320px;
+  height: 310px;
 }
 
-.footer::after{
+.adress2{
+  width: 195px;
+  height: 200px;
+  margin: auto;
+  text-align: left;
+}
+
+footer::after{
   content: "";
   display: table;
   clear: both;
@@ -198,7 +182,7 @@ body {
 
 .footer-text{
   width: 580px;
-  float: left;
+  float: right;
 }
 
 .write-us{
@@ -292,14 +276,12 @@ h2{
 
 .catalog-main{
   width: 1160px;
-  outline: 1px solid black;
   font-size: 0;
 }
 
 .sidebar{
   width: 265px;
   display: inline-block;
-  outline: 1px solid black;
   vertical-align: top;
   font-size: 16px;
 }
@@ -313,7 +295,6 @@ h2{
 .catalog{
   width: 880px;
   display: inline-block;
-  outline: 1px solid black;
   font-size: 16px;
 }
 
@@ -324,7 +305,6 @@ h2{
 }
 
 .catalog-nav{
-  outline: 1px solid black;
 }
 
 .catalog-title{
@@ -339,6 +319,7 @@ h2{
   float: right;
   margin-top: 60px;
   margin-left: 100px;
+  font-size: 0;
 }
 
 .catalog-item::after{
