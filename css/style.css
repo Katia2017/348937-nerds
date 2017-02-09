@@ -1,20 +1,37 @@
 body {
-  font-size: 16px;
-  line-height: 24px;
-  color: #283136;
-  font-weight: normal;
-  font-family: Roboto;
+  min-width: 1400px;
+  font-family: Roboto, sans-serif;
+  color: #000000;
+}
+
+.container::after{
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .container{
-  width: 1160px;
+  width: 1200px;
   margin-left: auto;
   margin-right: auto;
+  outline: 1px solid black;
+}
+
+.index-header::after{
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .index-header{
   background-color: #eeeeee;
-  min-height: 545px;
+  outline: 1px solid black;
+}
+
+.header-logo{
+  float: left;
+  margin-top: 50px;
+  margin-right: 203px;
 }
 
 .main-navigation::after{
@@ -23,31 +40,76 @@ body {
   clear: both;
 }
 
-.header-logo{
+.main-navigation{
+  margin-bottom: 5px;
+}
+
+.navigation{
   float: left;
+  outline: 1px solid black;
+  margin-top: 75px;
 }
 
-.header-logo-pic{
-  margin-left: 88px;
-  margin-top: 41px;
+.navigation ul{
+  padding: 0;
+  margin: 0;
+  font-size: 0;
+  outline: 1px solid black;
 }
 
-.header-ul{
-  float:left;
-}
-
-.main-navigation li{
+.navigation li{
   display: inline-block;
+  vertical-align: top;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 30px;
+  font-family: Roboto, sans-serif;
+  text-transform: uppercase;
+  color: #000000;
+  outline: 1px solid black;
+}
+
+.navigation a{
+  display: block;
+  padding-right: 46px;
+  color: black;
+  text-decoration: none;
+}
+
+.navigation a:hover{
+  color: #fb565a;
+}
+
+.navigation a:active{
+  color: black;
+  opacity: 0.3;
 }
 
 .basket{
   float: right;
+  margin-top: 75px;
+  margin-right: 39px;
+  outline: 1px solid black;
+}
+
+.basket a{
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 30px;
+  font-family: Roboto, sans-serif;
+  text-transform: uppercase;
+  color: black;
+  text-decoration: none;
 }
 
 .features1::after{
   content: "";
   display: table;
   clear: both;
+}
+
+.features1{
+  outline: 1px solid black;
 }
 
 .features2::after{
@@ -77,11 +139,54 @@ body {
 .features-text{
   float: left;
   width: 380px;
+  margin-top: 14px;
+  margin-right: 51px;
+}
+
+.big{
+  display: block;
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+  font-family: Roboto, sans-serif;
+  color: #000000;
+  outline: 1px solid black;
+  margin-bottom: 0;
+}
+
+.small{
+  display: block;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  font-family: Roboto, sans-serif;
+  color: #000000;
+  outline: 1px solid black;
+  margin-top: 27px;
+  padding-left: 2px;
+}
+
+.btn-know-more{
+  display: inline-block;
+  margin-top: 22px;
+  padding: 17px 55px 17px;
+  border-radius: 2%;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  font-family: Roboto, sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #fb565a;
+  border: none;
+  cursor: pointer;
 }
 
 .features-img{
-  float: right;
-  margin-top: 12px;
+  float: left;
+  margin-top: 8px;
+  outline: 1px solid black;
 }
 
 .menu::after{
@@ -147,24 +252,26 @@ body {
 }
 
 .map{
-  min-height: 500px;
-  margin-top: 83px;
-  text-align: center;
+  background-image: url("../img/layer2.jpg");
+  background-repeat: no-repeat;
+  height: 415px;
 }
 
-.map-marker{
-  display: none;
+.marker{
+  float: right;
 }
 
 .address{
-  display: block;
   width: 320px;
   height: 310px;
+  background: white;
+  padding-top: 50px;
+  box-sizing: border-box;
+  float: left;
 }
 
 .address2{
   width: 195px;
-  height: 200px;
   margin: auto;
   text-align: left;
 }
@@ -245,22 +352,6 @@ footer::after{
 .write-us h1{
   font-size: 45px;
   line-height: 45px;
-}
-
-.big-text {
-  font-size: 55px;
-  line-height: 55px;
-  color: #000000;
-  font-weight: normal;
-  font-family: Roboto;
-}
-
-h2{
-  font-size: 24px;
-  line-height: 30px;
-  color: #000000;
-  font-weight: bold;
-  font-family: Roboto;
 }
 
 .catalog-header{
