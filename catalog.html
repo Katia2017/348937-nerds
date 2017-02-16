@@ -16,29 +16,28 @@
               <img class="header-logo-pic" src="img/nerds-logo.png" width="160" height="65" alt="Нёрдс">
             </a>
           </div>
-          <nav>
-            <ul class="header-ul">
-              <li>
-                <a href="#">Студия</a>
-              </li>
-              <li>
-                <a href="#">Клиенты</a>
-              </li>
-              <li>
-                <a href="#">Магазин</a>
-              </li>
-              <li>
-                <a href="#">Контакты</a>
-              </li>
-            </ul>
-          </nav>
+          <div class="navigation">
+              <ul class="navigation-ul">
+                <li>
+                  <a href="#">Студия</a>
+                </li>
+                <li>
+                  <a href="#">Клиенты</a>
+                </li>
+                <li>
+                  <a class="pink-line" href="#">Магазин</a>
+                </li>
+                <li>
+                  <a href="#">Контакты</a>
+              </ul>
+          </div>
           <div class="basket">
             <a class="basket-link" href="#">Корзина</a>
           </div>
         </div>
 
-        <div class="title">
-          <h1 class="big-text">Магазин готовых шаблонов</h1>
+        <div class="catalog-title">
+          <h1 class="catalog-h1">Магазин готовых шаблонов</h1>
         </div>
       </div>
     </header>
@@ -46,16 +45,28 @@
     <div class="container">
       <main class="catalog-main">
         <div class="sidebar">
-          <form action="#" method="get">
 
-            <div class="price">
-              <span class="price-title">Стоимость: </span>
-                От
-                До
+          <h2 class="sidebar-h2">Стоимость:</h2>
+
+          <form action="form.php" method="GET">
+            <div class="range-filter">
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar" style="margin-left: 20%; width: 30%"></div>
+                </div>
+                <div class="toggle toggle-min"></div>
+                <div class="toggle toggle-max"></div>
+              </div>
+
+              <div class="price-controls">
+                <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+                <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+              </div>
             </div>
 
             <div class="net">
-              <span class="net-title">Сетка:</span>
+
+              <h2 class="sidebar-h2">Сетка:</h2>
               <ul>
                 <li>
                   <label>
@@ -76,7 +87,7 @@
             </div>
 
             <div class="catalog-features">
-              <span class="features-title">Особенности:</span>
+              <h2 class="sidebar-h2">Особенности:</h2>
               <ul>
                 <li>
                   <label>
@@ -109,8 +120,9 @@
             <div class="btn-show">
               <button type="submit">Показать</button>
             </div>
-          </div>
+
           </form>
+        </div>
 
         <section class="catalog">
           <div class="catalog-nav">
