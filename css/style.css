@@ -70,7 +70,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   box-sizing: border-box;
-  padding: 0 20;
+  padding: 0px 20px;
 }
 
 .index-header::after{
@@ -700,7 +700,7 @@ body {
 }
 
 .partners-item-4{
-  width: 230px;
+  width: 200px;
   float: left;
   position: relative;
   margin-top: 62px;
@@ -720,7 +720,7 @@ body {
 }
 
 .map{
-  padding-top: 50px;
+  padding-top: 54px;
   background-position: center top;
   background-image: url("../img/layer2.jpg");
   background-repeat: no-repeat;
@@ -791,7 +791,7 @@ footer::after{
 .footer-social{
   width: 300px;
   float: left;
-  margin-top: 19px;
+  margin-top: 16px;
   margin-right: 100px;
 }
 
@@ -845,7 +845,7 @@ footer::after{
 }
 
 .footer-text{
-  margin-top: 9px;
+  margin-top: 6px;
   float: left;
   line-height: 0;
 }
@@ -1012,7 +1012,7 @@ footer::after{
 
 .catalog-header{
   background-color: #eeeeee;
-  min-height: 320px;
+  min-height: 355px;
 }
 
 .pink-line{
@@ -1051,7 +1051,7 @@ footer::after{
 }
 
 .sidebar{
-  margin-top: 76px;
+  margin-top: 42px;
   width: 250px;
   display: inline-block;
   vertical-align: top;
@@ -1240,7 +1240,7 @@ input[type="checkbox"]{
 .catalog-nav-title{
   float: left;
   margin-left: 150px;
-  margin-top: 94px;
+  margin-top: 60px;
   font-size: 18px;
   line-height: 18px;
   font-weight: bold;
@@ -1249,8 +1249,9 @@ input[type="checkbox"]{
 }
 
 .sort-type{
-  float: right;
-  margin-top: 95px;
+  float: left;
+  margin-left: 265px;
+  margin-top: 60px;
 }
 
 .btn-price, .btn-type, .btn-name, .btn-up, .btn-down{
@@ -1265,15 +1266,19 @@ input[type="checkbox"]{
 }
 
 .btn-price, .btn-type{
-  padding-right: 20px;
+  margin-right: 21px;
 }
 
 .btn-name{
-  padding-right: 45px;
+  margin-right: 45px;
 }
 
 .btn-down{
-  padding-right: 9px;
+  margin-right: 9px;
+}
+
+.btn-type, .btn-name, .btn-up{
+  color: #cccccc;
 }
 
 .catalog-content{
