@@ -1,55 +1,55 @@
 .sprite {
-    background-image: url("../img/spritesheet.png");
-    background-repeat: no-repeat;
-    display: block;
+  background-image: url("../img/spritesheet.png");
+  background-repeat: no-repeat;
+  display: block;
 }
 
 .sprite-cart-icon {
-    width: 15px;
-    height: 15px;
-    background-position: -10px -10px;
+  width: 15px;
+  height: 15px;
+  background-position: -10px -10px;
 }
 
 .sprite-checkbox-off {
-    width: 23px;
-    height: 23px;
-    background-position: -10px -45px;
+  width: 23px;
+  height: 23px;
+  background-position: -10px -45px;
 }
 
 .sprite-checkbox-on {
-    width: 27px;
-    height: 23px;
-    background-position: -10px -88px;
+  width: 27px;
+  height: 23px;
+  background-position: -10px -88px;
 }
 
 .sprite-fb-icon {
-    width: 12px;
-    height: 22px;
-    background-position: -10px -131px;
+  width: 12px;
+  height: 22px;
+  background-position: -10px -131px;
 }
 
 .sprite-insta-icon {
-    width: 21px;
-    height: 21px;
-    background-position: -10px -173px;
+  width: 21px;
+  height: 21px;
+  background-position: -10px -173px;
 }
 
 .sprite-radio-off {
-    width: 25px;
-    height: 25px;
-    background-position: -10px -214px;
+  width: 25px;
+  height: 25px;
+  background-position: -10px -214px;
 }
 
 .sprite-radio-on {
-    width: 25px;
-    height: 25px;
-    background-position: -10px -259px;
+  width: 25px;
+  height: 25px;
+  background-position: -10px -259px;
 }
 
 .sprite-vk-icon {
-    width: 26px;
-    height: 15px;
-    background-position: -10px -304px;
+  width: 26px;
+  height: 15px;
+  background-position: -10px -304px;
 }
 
 body {
@@ -69,6 +69,8 @@ body {
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
+  box-sizing: border-box;
+  padding: 0 20;
 }
 
 .index-header::after{
@@ -103,7 +105,7 @@ body {
 
 .navigation{
   float: left;
-  margin-top: 75px;
+  margin-top: 77px;
 }
 
 .navigation ul{
@@ -140,10 +142,10 @@ body {
 }
 
 .basket{
-  float: right;
+  float: left;
   max-width: 140px;
-  margin-top: 75px;
-  margin-right: 39px;
+  margin-top: 77px;
+  margin-left: 198px;
 }
 
 .basket a{
@@ -182,38 +184,38 @@ body {
   position: relative;
 }
 
-.slider input[type=radio] {
-    position: absolute;
-    opacity: 0;
+.slider input[type="radio"] {
+  position: absolute;
+  opacity: 0;
 }
 
 .slider-controls{
-    position: absolute;
-    bottom: 95px;
-    left: 50%;
-    width: 200px;
-    height: 10px;
-    margin-left: -100px;
-    text-align: center;
-    z-index: 1000;
+  position: absolute;
+  bottom: 95px;
+  left: 50%;
+  width: 200px;
+  height: 10px;
+  margin-left: -100px;
+  text-align: center;
+  z-index: 1000;
 }
 
 .slider-controls label{
-    display: inline-block;
-    width: 4px;
-    height: 4px;
-    margin: 0 3px;
-    background: white;
-    border: 3px solid white;
-    vertical-align: top;
-    border-radius: 50%;
-    cursor: pointer;
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  margin: 0 3px;
+  background: white;
+  border: 3px solid white;
+  vertical-align: top;
+  border-radius: 50%;
+  cursor: pointer;
 }
 
 #btn-1:checked ~ .slider-controls label[for="btn-1"],
 #btn-2:checked ~ .slider-controls label[for="btn-2"],
 #btn-3:checked ~ .slider-controls label[for="btn-3"] {
-    background:#c1c1c1;
+  background:#c1c1c1;
 }
 
 .features::after{
@@ -250,8 +252,7 @@ body {
   font-weight: 400;
   font-family: "Roboto", "Arial", sans-serif;
   color: #000000;
-  margin-top: 27px;
-  padding-left: 2px;
+  margin-top: 26px;
 }
 
 .features-img{
@@ -415,7 +416,7 @@ body {
 
 .menu-p{
   display: block;
-  margin-top: 18px;
+  margin-top: 16px;
   width: 248px;
   font-size: 16px;
   line-height: 24px;
@@ -486,7 +487,7 @@ body {
 }
 
 .about{
-  margin-top: 113px;
+  margin-top: 110px;
 }
 
 .about-left{
@@ -552,8 +553,9 @@ body {
 }
 
 .about-right{
-  float: right;
-  width: 400px;
+  float: left;
+  margin-left: 140px;
+  width: 356px;
 }
 
 .about-logo{
@@ -776,6 +778,10 @@ body {
   cursor: pointer;
 }
 
+footer{
+  margin-bottom: 30px;
+}
+
 footer::after{
   content: "";
   display: table;
@@ -785,7 +791,7 @@ footer::after{
 .footer-social{
   width: 300px;
   float: left;
-  margin-top: 15px;
+  margin-top: 19px;
   margin-right: 100px;
 }
 
@@ -839,7 +845,7 @@ footer::after{
 }
 
 .footer-text{
-  margin-top: 5px;
+  margin-top: 9px;
   float: left;
   line-height: 0;
 }
@@ -1020,7 +1026,7 @@ footer::after{
   height: 2px;
   background: #fb565a;
   position: absolute;
-  top: 35px;
+  top: 32px;
   left: 0;
 }
 
@@ -1041,7 +1047,7 @@ footer::after{
 .catalog-main{
   width: 1160px;
   font-size: 0;
-  margin-bottom: 63px;
+  margin-bottom: 60px;
 }
 
 .sidebar{
@@ -1130,7 +1136,7 @@ footer::after{
 }
 
 .price-controls input {
-  font-family: 'Roboto', 'Arial', sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
   width: 80px;
   height: 40px;
@@ -1149,7 +1155,7 @@ footer::after{
   font-size: 16px;
   line-height: 20px;
   font-weight: normal;
-  font-family: 'Roboto', 'Arial', sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
 }
 
 input[type="radio"]{
@@ -1243,9 +1249,8 @@ input[type="checkbox"]{
 }
 
 .sort-type{
-  float: left;
+  float: right;
   margin-top: 95px;
-  margin-left: 268px;
 }
 
 .btn-price, .btn-type, .btn-name, .btn-up, .btn-down{
@@ -1310,11 +1315,11 @@ input[type="checkbox"]{
 }
 
 .catalog-block{
-  display: block;
+  display: none;
+  min-height: 230px;
   box-sizing: border-box;
   background-color: #eeeeee;
   width: 360px;
-  height: 230px;
   position: absolute;
   bottom: 0;
   font-size: 16px;
@@ -1357,7 +1362,8 @@ input[type="checkbox"]{
   height: 50px;
   margin-left: 80px;
   margin-top: 30px;
-  padding-left: 62px;
+  margin-bottom: 20px;
+  text-align: center;
   padding-top: 17px;
   border-radius: 2%;
   font-weight: 500;
