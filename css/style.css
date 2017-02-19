@@ -1249,8 +1249,7 @@ input[type="checkbox"]{
 }
 
 .sort-type{
-  float: left;
-  margin-left: 265px;
+  float: right;
   margin-top: 60px;
 }
 
